@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+</head>
+<body>
+    <script>
+        // string, numberm object, null, array, boolean
+        // string (문자열) "",'' 안에
+        let name = "안녕 내 이름은 '진세림'?";
+        let name2 = "안녕 내 이름은 '뚤리'?";
+
+        console.log(name)
+        console.log(name2)
+        
+
+        // number
+        var x = 1; //숫자는 소수점도 가능
+        var u = undefined;
+        var y; // 선언 안하면 undifined로 하나의 데이터 타입
+
+        console.log(x)
+        console.log(u)
+        console.log(y)
+
+        // null
+        let n = null; // 아무것도 아닌데, 일단 할당
+        
+        console.log(n)
+
+        // object 중괄호
+        let person = {};
+        person.first = "serim";
+        person.last = "jin";
+        person.age = "30";
+
+        console.log(person)
+
+        let me = {};
+        sung = "jin";
+        erum = "serim";
+        nai = "30";
+
+        console.log(me, sung, erum, nai)
+
+        // array (배열) -> 배열타입은 object 대괄호
+        let arr = ["apple","orange","grape"];
+        console.log(arr[0]);
+        console.log(arr[1]);
+
+        // 0이 시작점
+
+        let arr2 = [1,3,5,7,9];
+        console.log(arr2[0]);
+        console.log(arr2[3]);
+
+        let arr3 = [person, me];
+        console.log(arr3);
+
+        let arr4 = [];
+        arr4[0] = 1;
+        arr4[1] = 3;
+
+        console.log(arr4.length); // 갯수 확인
+
+        // boolean true,false
+
+        let isAdult = true;
+        let q = 5;
+        let w = 7;
+
+        console.log(q > w);
+        console.log(typeof w); // 타입 알려주기
+
+
+    </script>
+</body>
+</html>
