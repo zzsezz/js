@@ -1,11 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
 </head>
 <body>
     <script>
+        //  if(){}
+        //조건 만족 시 실행 (한번)
         
+        // 반복문 - 조건 만족 시 계속 실행
+
+        // for (조건) {}
+
+        for(var i=0; i<5; i++) {
+            if(i == 3) {
+                break;
+            }
+            console.log("number is + i");
+        }
+
+        //다른 구조
+        var i = 0;
+        var len = 10;
+        var total = 0;
+        for(; i<=10; i++) {
+            total = total + i;
+        }
+
+        console.log(total);
+
+        var numbers = [43,23,5,7];
+        // var len = numbers.length;
+        // for(var i=0; i<len ; i++){
+        //     console.log(numbers[i]);
+        // }
+
+//for-in for-of 시작점 index 설정 불가
+        // for - in
+
+        for(var idx in numbers) {
+            console.log(numbers[i]);
+        }
+
+        //forEach
+            numbers.forEach(function(){
+
+            })
+
+
+        var person = {
+        first:"serim",
+        last: "jin",
+        age: 30
+        };
+
+        for(var key in person) {
+            console.log(person[key]);
+        }
+
+        //for-of
+
+        for(var num of numbers) {
+            console.log(num);
+        }
+
+        //while(conditon){}
+
+        var i = 1;
+        var total = 0;
+        while(i <=10) {
+            total = total + 1;
+            i++;
+        }
+        console.log(total);
+
+        //do-while
+        var i = 1;
+        var total = 0;
+        do {
+            total = total + i;
+            i++;
+        }while(i<=10);
+        console.log(total);
+
     </script>
 </body>
 </html>
