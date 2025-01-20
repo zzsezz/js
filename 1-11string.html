@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+    <script>
+        // string 객체
+        var txt = "abcdefg";
+        console.log(txt.length); // 글자의 길이 알려줌
+
+        //indexOf
+
+        var str = "please let";
+        console.log(str.indexOf("let"));
+
+        // 없으면 -1 리턴
+
+        if(str.indexOf("") > -1) {
+            console.log('find let')
+        }
+
+        // lastIndexOf 마지막
+        console.log(str.lastIndexOf('let'));
+
+        console.log(str.search("let"));
+
+        //slice 문자열 가지고오기
+        var str = 'apple, banana, kiwi'
+        console.log(str.slice(7,13)); //앞에서
+        console.log(str.slice(7));
+        console.log(str.slice(-12,-6)); //뒤에서
+
+        //substring
+        console.log(str.substring(7,13));
+
+        //substr
+        console.log(str.substr(7,6));
+
+        var birthday = "940306";
+        console.log(birthday.substr(0,2));
+        console.log(birthday.substr(2,2));
+
+        var birthday = "1994-03-06";
+        console.log(birthday.substring(0,birthday.indexOf("-")));
+        // substr - 몇글자 가져올지 정해져있을때
+        // indexOf
+
+        //replace 바꾸기
+        var str = 'pleas visit here'
+        var str2 = str.replace('here','there')
+        console.log(str2);
+        
+        var str = 'pleas visit here here here'
+        var str2 = str.replace('here','there')
+        console.log(str2); // 앞에 한개만 바뀜
+
+        //정규식사용 - 전체 다 변경 가능
+        var str = 'pleas visit here Here here'
+        var str2 = str.replace(/here/gi,'there')
+        console.log(str2);
+        //g global i lowercase
+
+        // uppercase
+
+        console.log(str2.toUpperCase());
+
+        // lowercase
+
+        console.log(str.toLocaleLowerCase());
+
+        //john
+        // ** 던지기 전에 전체 소문자 또는 대문자로 치환
+        //database > john, JOHN
+
+        //concat 문자열 결합
+        var txt1 = 'hello';
+        var txt2 = 'world';
+        var txt3 = txt1 + " " + txt2;
+        console.log(txt3);
+        var txt4 = txt1.concat(" ",txt2);
+        console.log(txt4);
+        
+        // trim
+        var str = "   hello world    ";
+        console.log(str);
+        console.log(str.trim()); //공백 조절
+
+        //padStart (앞,뒤)에 0을 채워줌
+
+        var str = '5';
+        console.log(str.padStart(4,0));
+
+        //padEnd
+
+        console.log(str.padEnd(2,0));
+
+        //charAt
+        var str = 'hello world';
+        console.log(str.charAt(1));
+
+        //split
+        var tags = "A,B,C";
+        var arr = tags.split(',')
+        console.log(arr);
+
+        var birthday = '1994-03-06';
+        var arr2 = birthday.split('-');
+        console.log(arr2);
+    </script>
+</body>
+</html>
