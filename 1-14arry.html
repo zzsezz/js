@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+    <script>
+        //toString()
+        
+        var fruits = ['banana', 'orange', 'apple']
+        console.log(fruits.toString());
+        
+        //join()
+
+        console.log(fruits.join("*"));
+
+        var txt = 'banana';
+        txt += 'orange';
+        txt += 'apple';
+
+        var arr = [];
+        arr.push('banana');
+        arr.push('orange');
+        arr.push('apple');
+
+        // document.getElementById('div1').innerHTML = txt; // 왜 안될까...
+
+        //pop() - 배열의 가장 마지막 요소 제거
+        // pop()하면, 제거된 요소 리턴
+
+        var str = fruits.pop();
+        console.log(str);
+        console.log(fruits);
+
+
+        //push()
+        //배열 마지막에 새 요소 추가
+        fruits.push('kiwi');
+        console.log(fruits);
+
+        //shift()
+        //배열의 첫 번째 요소 제거
+        //shift() 리턴으로 제거된 요소 반환
+        
+        var str = fruits.shift();
+        console.log(str);
+        console.log(fruits);
+
+        
+    </script>
+</body>
+</html>
