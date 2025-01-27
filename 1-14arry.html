@@ -127,6 +127,35 @@
         console.log(pass)
         console.log(two)
 
+        //reduce
+        // accumulator - 누산기
+        // currentValue - 배열을 읽으면서 현재값
+        // 
+
+        // var total = 0;
+        var arr1 = [1,2,3,4];
+        // for (var x of arr1) {
+        //     total += x;
+        // }
+
+        var total = arr1.reduce(function(a,c){
+            return a + c ;
+        })
+
+        console.log(total);
+
+        //map
+        var userList = [
+            {firstName: 'tpfla', lastName:'jin' ,mail:'dooly@gmail.com'},
+            {firstName: 'tpdbs', lastName:'jin' ,mail:'yoon@gmail.com'},
+            {firstName: 'wlgP', lastName:'yoon' ,mail:'yoon2@gmail.com'},
+            {firstName: 'gPdnjs', lastName:'lim' ,mail:'lim@gmail.com'}
+        ];
+
+        var userList2 = userList.map(function(user){
+            return {fullName:user.lastName + user.firstName, firstName:user.firstName, lastName:user.lastName}});
+    
+            console.log(userList2);
     </script>
 </body>
 </html>
