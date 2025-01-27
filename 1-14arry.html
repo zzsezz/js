@@ -95,13 +95,13 @@
         console.log(points)
 
         var person = [
-            {name:'tpfla', point:100},
-            {name:'alswl', point:80},
-            {name:'tnwl', point:40},
-            {name:'ehgus', point:10}
+            {name:'tpfla', point:100, class:2},
+            {name:'alswl', point:80, class:10},
+            {name:'tnwl', point:40, class:2},
+            {name:'ehgus', point:10, class:5}
         ];
 
-        person.sort(function(a,b){
+        // person.sort(function(a,b){
             // if(a.point > b.point){
             //     return 1;
             // }else if (a.point<b.point){
@@ -110,9 +110,23 @@
             //     return 0;
             // }
 
-            return a.point > b.point ? 1 : a.point < b.point ? -1 : 0;
-            });
-        console.log(person);
+        //     return a.point > b.point ? 1 : a.point < b.point ? -1 : 0;
+        //     });
+        // console.log(person);
+
+        // filter() **많이씀**
+
+        var pass = person.filter(function(person){
+            return person.point > 80;
+        });
+
+        var two = person.filter(function(person){
+            return person.class == 2 ;
+        })
+
+        console.log(pass)
+        console.log(two)
+
     </script>
 </body>
 </html>
