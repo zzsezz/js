@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+
+</head>
+<body>
+
+    <script>
+
+
+        //math 내장함수
+
+        //round() 반올림/반내림
+
+        console.log(Math.round(4.9));
+        console.log(Math.round(4.4));
+        
+
+
+        //moment library
+
+        // const moment = require('moment');
+
+        const today = moment();
+        console.log(today.format());
+        console.log(today.format('dddd'));
+        console.log(today.endOf('day').fromNow()); 
+
+
+    </script>
+
+</body>
+</html>
