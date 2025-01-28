@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <button type="button" onclick="this.style.backgroundColor='red'">click</button>
+
+    <script>
+        console.log(this);
+
+        function fullName(){
+
+        }
+
+        var person = {
+            first: 'srim',
+            last: 'jin',
+            fullName: function() {
+        return this.first + ' ' + this.last;            }
+        };
+
+        console.log(person.fullName());
+
+    </script>
+</body>
+</html>
