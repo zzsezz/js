@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <input type="text"/>
+    <button type="button">save</button>
+
+    <script>
+        // console.log(window);
+
+        // alert('this is alert') //확인만
+        // confirm // 취소,확인
+        // var yn = confirm('are you sure');
+        // console.log(yn);
+
+        // if(yn){
+        //     console.log('delete');
+        // }
+        
+        // prompt ((잘 쓰진 않음))
+        var txt = prompt('name');
+
+        if(txt == null) {
+        }else if(txt == "") {
+        }else if(txt != "") {
+            console.log(txt);
+        }
+
+        window.open('https://naver.com');
+
+        window.print();
+
+        //setTimeout
+
+        setTimeout(function(){
+            console.log('after 5s');
+        }, 5000);
+
+        //setInterval
+        var i = 0;
+        var fnc = setInterval(function(){
+            console.log('every 3s -'+ i);
+            if(i == 3) {
+                clearInterval(fnc);
+            }
+            i++;
+        },3000);
+
+        clearInterval
+        clearTimeout
+
+
+    </script>
+</body>
+</html>
