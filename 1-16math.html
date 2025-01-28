@@ -20,15 +20,58 @@
 
 
         //moment library
-
-        // const moment = require('moment');
-
         const today = moment();
         console.log(today.format());
         console.log(today.format('dddd'));
         console.log(today.endOf('day').fromNow()); 
 
+        // 성공..! 감동 눈물 흐흑
 
+        // ceil() 무조건 올림
+        console.log(Math.ceil(6.2));
+
+        console.log(Math.ceil(72/10));
+
+        // floor () 무조건 내림
+        console.log(Math.floor(9.9));
+
+
+        // trunc() 정수부분만 리턴
+        console.log(Math.trunc(9.9));
+
+        // abs() 무조건 양수 변환
+        console.log(Math.abs(-4));
+
+        // sign() 음수면 -1 양수면 1 0이면 0 리턴
+        console.log(Math.sign(9));
+        console.log(Math.sign(-9));
+        console.log(Math.sign(0));
+
+        // 거의안씀
+        // pow() 제곱 2의 2제곱
+        console.log(Math.pow(2,2));
+
+        // sqrt() 루트
+        console.log(Math.sqrt(64));
+
+        // max()
+
+        // random()
+        var x = Math.random();
+
+        console.log(x);
+
+        // 1~10 사이 랜덤 숫자
+
+        var x = Math.floor((Math.random() * 10)+1); // 0 > x < 10
+        console.log(x);
+
+
+        function getRndInteger(min, max) {
+            return Math.floor(Math.random()* (max-min+1)) + min ;
+        }
+
+        console.log(getRndInteger(10,20));
     </script>
 
 </body>
