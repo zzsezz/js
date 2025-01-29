@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //global scope, local scope
+        // scope 변수에 대한 접근성
+
+        //local scope
+
+        function myFunction(){
+
+            var carName = 'kona';
+            console.log(carName); 
+        }
+
+        // myFunction();
+        console.log(carName); 
+
+        //
+
+        // var carName2 = "blackkona";
+
+        //여기를 먼저 해석함
+        function myFunction2(){
+            console.log(carName2);
+        }
+        myFunction2();
+
+        // var myFunction3 = function() {
+        //     console.log(carName2);
+
+        // }
+        // myFunction3();
+
+    </script>
+</body>
+</html>
