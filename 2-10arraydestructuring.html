@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+<div class="tri" style="border-left: 5px solid transparent;
+border-right: 5px solid transparent;
+border-top: 6px solid #000; height: 1px; width: 1px;"></div>
+
+    <script>
+        //array destructuring
+
+        function getScores() {
+            return [70,80,90];
+        }
+
+        var scores = getScores();
+        console.log(scores);
+        console.log(scores[1]);
+
+        // array 대괄호
+
+        var [x,y,z] = getScores();
+        console.log(x);
+
+
+        //위도, 경도
+        function getLocation(){
+            return [123.12, 23.023];
+        }
+
+        var [latitude,longtitude] = getLocation();
+        console.log(latitude);
+
+    </script>
+</body>
+</html>
