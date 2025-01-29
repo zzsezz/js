@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //방법1
+    // function say(message) {
+    //     console.log(message);
+    // }
+        //방법2 (예전방식)
+    // function say(message) {
+    //     if(message != undefined) {
+    //         console.log(message);
+    //     }else{
+    //         console.log('파라미터가 안넘어옴');
+    //     }
+    // }
+
+        //방법3 코드 줄이기
+    function say(message='파라미터가 안넘어옴') {
+        console.log(message);
+    }
+
+    say('hello');
+    say();
+
+    // = 뒤 지정이 가능
+    function plus(x, y=1) {
+        console.log(x+y);
+    }
+
+    plus(4)
+
+    //ES6 -EcmaScript 6.ver
+
+
+    </script>
+</body>
+</html>
