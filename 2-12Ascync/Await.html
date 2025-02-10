@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+    <script>
+
+
+        //promise보다 간단
+
+        async function getData2(path) {
+            //비동기 통신을 기다린다
+           return (await axios.get(path)).data;
+        }
+
+        //호출방식
+
+        function calculateSum(){
+        var data = await getData2();
+
+        var total = 0;
+
+        for(var item of data) {
+            total += item.price;
+        }
+
+        console.log(total);
+    }
+
+    calculateSum();
+
+    </script>
+</body>
+</html>

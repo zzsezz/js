@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <script>
+        //promise
+        // 비동기 통신 기다림?
+
+        // var x = 1;
+
+        // 서버 호출해서 데이터를 받아오는 함수
+        // y = callServerData();
+
+        // var z = x + y;
+
+        //가짜서버? mock server
+        
+        // axios - open library
+
+        function getData(){
+            //promise
+
+            return new Promise(function(resolve, reject){
+                axios.get(url).then(function(response){
+                    console.log(response.data);
+                    resolve(response.data);
+                });
+            });
+        }
+
+        getData(). then(function(data){
+            for(var item of data) {
+                total += item.price;
+            }
+
+            console.log(total);
+        });
+
+
+    </script>
+</body>
+</html>

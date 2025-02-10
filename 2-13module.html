@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+
+    <!-- 모듈로 정의 시 임포트 정의만 가져옴 -->
+    
+    <!-- <script src="/2-13module.js" type="module"></script> -->
+
+    <script type="module">
+    import {log,error, PI} from '/2-13module.js';
+        //선별해서 가능 ^
+        
+        log(PI);
+        log('log로 메시지 출력');
+        error('error로 메시지 출력');
+
+    </script>
+
+<!-- js를 나눠서 관리 가능 모듈 -->
+
+    <script src="/2-13ref.js" type="module"></script>
+
+    <!-- <script>
+        log('log로 메시지 출력');
+        error('error로 메시지 출력');
+    </script> -->
+</body>
+</html>
