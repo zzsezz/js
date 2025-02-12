@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+    .border-red {
+        border: 2px solid red;
+    }
+
+    .border-green {
+        border: 2px solid green;
+    }
+
+    .border-default {
+        border-width: 1px;
+        border-color: blue;
+        border-style: solid;
+    }
+
+</style>
+<body>
+    text:
+    <label for="">
+        <input type="radio" name="radio_email_yn" value="Y" id="" onclick="showEmail();"> accept
+    </label>
+    <input type="radio" name="radio_email_yn" value="N" onclick="hideEmail();" checked> reject
+    <div id="divEmail" style="display: none;">email <input type="text" id="email2"></div>
+   
+    <br>
+    <input type="text" id="text1" onblur="changeBorder();">
+    <button type="button" onclick="doSave();">save</button>
+    <script>
+        function changeBorder(){
+            var text1 = document.getElementById('text1');
+            if(text1.value == '') {
+                text1.className = 'border-green';
+            }else if (text1.value == 'red') {
+                text1.className = 'border-red';
+            }else {
+                text1.className = 'border-default';
+            }
+            }
+        
+        function doSave() {
+            var text1 = document.getElementById('text1');
+            if(text1.value == "") {
+                text1.className = 'border-red';
+                return alert('필수값입력');
+            }
+        }
+
+        function showEmail() {
+            document.getElementById('divEmail').style.display = '';
+    
+        }
+
+        function hideEmail() {
+            document.getElementById('divEmail').style.display = 'none';
+    
+        }
+    </script>
+</body>
+</html>
