@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+    <!-- input onfocus onblur onkeydown -->
+    <!-- checkbox, button select onclick -->
+
+    <input type="text" id="text" onfocus="doFocus();" onblur="doBlur" onkeydown="doKeydown(event);">
+    <button onclick="doSave();">click</button>
+    <select name="" id="" onchange="doChange();"></select>
+    <script>
+        function doFocus(){
+            console.log('doFocus');
+        }
+
+        function doBlur(){
+            if(obj.value == '') {
+                alert('mandatory')
+            }
+            console.log(obj.value);
+        }
+
+        function doChange() {
+            document.getElementById('select').value;
+            console.log(selectValue);
+        }
+
+        function doKeydown(event){
+            console.log(event);
+        }
+
+        function doSave() {
+            console.log('doSave');
+        }
+
+        function doSearch(){
+            if(event.keyCode == 13) {
+                doSearch();
+            }
+        }
+
+    </script>
+</body>
+</html>
